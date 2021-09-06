@@ -35,3 +35,5 @@ Relation  avec Consomation (Month a plusieurs Consomations)
 Il faudra aussi crée au moins un premier client via le formulaire
 
 Enfin Dans Months il faudra crée les mois ainsi que lier des consomations au client crée ainsi que leur donner une conso. 
+
+Pour utiliser ce code il vous faudra faire un git clone, npm install , npm install axios,npm install @material-ui/core
