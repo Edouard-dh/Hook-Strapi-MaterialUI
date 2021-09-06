@@ -132,7 +132,7 @@ const Home = ({ clients, setIsDetails, setClickedClient, setClients }) => {
           <TableBody>
             {clients.map((client) => (
               <TableRow>
-                <TableCell align="center">{client.firstname}</TableCell>
+                <TableCell align="center">{client.lastname}</TableCell>
                 <TableCell align="center">
                   <Button
                     href="#"
