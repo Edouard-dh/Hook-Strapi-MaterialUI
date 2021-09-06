@@ -107,7 +107,7 @@ const getConsomationPrice =(price,consomationValue)=>{
           id="standard-read-only-input"
           label="Nom du client :"
           className={classes.pos}
-          defaultValue={clickedClient.nom}
+          defaultValue={clickedClient.lastname}
           InputProps={{
             readOnly: true,
           }}
@@ -117,7 +117,7 @@ const getConsomationPrice =(price,consomationValue)=>{
           id="standard-read-only-input"
           label="Prénom du client :"
           className={classes.pos}
-          defaultValue={clickedClient.prenom}
+          defaultValue={clickedClient.firstname}
           InputProps={{
             readOnly: true,
           }}
@@ -145,19 +145,9 @@ const getConsomationPrice =(price,consomationValue)=>{
 
         <TextField
           id="standard-read-only-input"
-          label="Poste du client :"
-          className={classes.pos}
-          defaultValue={clickedClient.poste}
-          InputProps={{
-            readOnly: true,
-          }}
-        />
-
-        <TextField
-          id="standard-read-only-input"
           label="Téléphone du client:"
           className={classes.pos}
-          defaultValue={clickedClient.telephone}
+          defaultValue={clickedClient.phone}
           InputProps={{
             readOnly: true,
           }}
@@ -173,7 +163,7 @@ const getConsomationPrice =(price,consomationValue)=>{
       </form>
 
       <TableContainer component={Paper}>
-        <TextField
+        {/* <TextField
           component="th"
           scope="row"
           align="center"
@@ -199,7 +189,7 @@ const getConsomationPrice =(price,consomationValue)=>{
           onChange={handlOnPriceChange}
           id="electricite"
           name="electricite"
-        />
+        /> */}
         <Table size="small">
           <TableHead>
             <TableRow>

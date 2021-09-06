@@ -16,12 +16,11 @@ import Paper from "@material-ui/core/Paper";
 
 const Home = ({ clients, setIsDetails, setClickedClient, setClients }) => {
   const [client, setClient] = useState({
-    nom: "",
-    prenom: "",
+    lastname: "",
+    firstname: "",
     age: 0,
     sexe: "",
-    poste: "",
-    telephone: "",
+    phone: "",
   });
 
   const handlOnClientSubmit = (e) => {
@@ -75,7 +74,7 @@ const Home = ({ clients, setIsDetails, setClickedClient, setClients }) => {
           </Typography>
           <form onSubmit={handlOnClientSubmit}>
             <TextField
-              name="nom"
+              name="lastname"
               label="Nom"
               variant="outlined"
               onChange={handlOnClientChange}
@@ -83,7 +82,7 @@ const Home = ({ clients, setIsDetails, setClickedClient, setClients }) => {
             />
 
             <TextField
-              name="prenom"
+              name="firstname"
               label="Prénom"
               variant="outlined"
               onChange={handlOnClientChange}
@@ -106,16 +105,9 @@ const Home = ({ clients, setIsDetails, setClickedClient, setClients }) => {
               className={classes.pos}
             />
 
-            <TextField
-              name="poste"
-              label="Poste"
-              variant="outlined"
-              onChange={handlOnClientChange}
-              className={classes.pos}
-            />
 
             <TextField
-              name="telephone"
+              name="phone"
               label="Téléphone"
               variant="outlined"
               onChange={handlOnClientChange}
@@ -140,7 +132,7 @@ const Home = ({ clients, setIsDetails, setClickedClient, setClients }) => {
           <TableBody>
             {clients.map((client) => (
               <TableRow>
-                <TableCell align="center">{client.nom}</TableCell>
+                <TableCell align="center">{client.firstname}</TableCell>
                 <TableCell align="center">
                   <Button
                     href="#"

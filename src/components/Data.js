@@ -31,12 +31,12 @@ const getConsomationsForOneClient = (id) =>{
  * post a client
  * @param newClient object like {
  *      id: integer
-        nom: String
-        prenom: String
-        telephone:integer
+      firstname: String
+        lastname: String
+        phone:String
         sexe:String
-        poste : String
         age : integer
+
 
  * }
  */
@@ -63,12 +63,12 @@ const deleteClient = (id)=>{
  * @param id the client id
  * @param updatedClient object like {
  *      id: integer
-        nom: String
-        prenom: String
-        telephone:integer
+       firstname: String
+        lastname: String
+        phone:String
         sexe:String
-        poste : String
         age : integer
+
 
  * }
  *
